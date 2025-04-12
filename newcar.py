@@ -32,7 +32,7 @@ class Car:
 
     def __init__(self):
         # Load Car Sprite and Rotate
-        self.sprite = pygame.image.load('/users/evil_survivor/Documents/AI car simulator/carspng/car.png').convert() # Convert Speeds Up A Lot
+        self.sprite = pygame.image.load('assets/car.png').convert() # Convert Speeds Up A Lot
         self.sprite = pygame.transform.scale(self.sprite, (CAR_SIZE_X, CAR_SIZE_Y))
         self.rotated_sprite = self.sprite 
 
@@ -182,7 +182,7 @@ def run_simulation(genomes, config):
     clock = pygame.time.Clock()
     generation_font = pygame.font.SysFont("Arial", 30)
     alive_font = pygame.font.SysFont("Arial", 20)
-    game_map = pygame.image.load('/users/evil_survivor/Documents/AI car simulator/carspng/map.png').convert() # Convert Speeds Up A Lot
+    game_map = pygame.image.load('assets/map.png').convert() # Convert Speeds Up A Lot
 
     global current_generation
     current_generation += 1
